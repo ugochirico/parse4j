@@ -40,7 +40,7 @@ public class Parse {
 		mRestAPIKey = restAPIKey;
 		isRootMode = false;
 		sServerPath = serverPath;
-		bCustomServer = true;
+		bCustomServer = true;		
 	}
 
 	/**

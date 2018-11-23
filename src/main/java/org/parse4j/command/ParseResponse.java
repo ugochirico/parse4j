@@ -80,6 +80,7 @@ public class ParseResponse {
 	
 	public JSONObject getJsonObject() {
 		
+		System.out.println(responseBody);
 		return new JSONObject(responseBody);
 		/*
 		try {

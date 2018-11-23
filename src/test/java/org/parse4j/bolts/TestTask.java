@@ -317,7 +317,7 @@ public class TestTask extends TestCase {
 			public Task<?> call() throws Exception {
 				final ArrayList<Task<Void>> tasks = new ArrayList<Task<Void>>();
 				for (int i = 0; i < 20; i++) {
-					final Task<Void>.TaskCompletionSource tcs = Task.create();
+					final Task.TaskCompletionSource tcs = Task.create();
 
 					final int number = i;
 					Task.callInBackground(new Callable<Void>() {
