@@ -50,10 +50,12 @@ public class Parse {
 	 * @param applicationId your app id
 	 * @param masterKey your master key
 	 */
-	static public void initializeAsRoot (String applicationId, String masterKey) {
+	static public void initializeAsRoot (String applicationId, String masterKey, String serverPath) {
 		mApplicationId = applicationId;
 		mMasterKey = masterKey;
 		isRootMode = true;
+		sServerPath = serverPath;
+		bCustomServer = true;
 	}
 
 	static public String getApplicationId() {
